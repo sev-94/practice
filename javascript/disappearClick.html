@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+
+    .redbox{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id = "div1" class="redbox">  </div>
+
+    <button id = "button1" class="redbox"> </but>
+
+    <script type="text/javascript">
+    
+    document.getElementById("button1").onclick = function() {
+       document.getElementById("div1").style.display = "none";
+    };
+
+    document.getElementById("button1").onclick = function() {
+       document.getElementById("div1").style.visibility = "hidden";
+    };
+
+    </script>
+    
+</body>
+</html>

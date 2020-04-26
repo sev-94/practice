@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+    
+    .redbox{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div id = "div1" class="redbox">
+        
+        <p>
+            Hello
+        </p>
+
+    </div>
+
+
+    <div id = "div2" class="redbox">
+        
+        <p>
+            Hi
+        </p>
+
+    </div>
+
+    <button id = "button1" class="redbox">
+        
+        <p>
+            Hey
+        </p>
+
+    </but>
+
+    <script type="text/javascript">
+    
+    document.getElementById("button1").onclick = function() {
+       document.getElementById("div1").innerHTML = "Hi";
+       document.getElementById("div2").innerHTML = "Bye";
+    };
+    
+    </script>
+
+</body>
+</html>

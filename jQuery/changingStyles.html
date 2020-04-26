@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- jQuery reference file -->
+    <script type="text/javascript" src="jquery1.min.js"></script>
+
+    <style>
+
+        #circle {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-radius: 100px;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="circle"></div>
+
+    <div class="square"></div>
+
+    <div class="square"></div>
+
+
+    <script>
+
+//Return attribute of an element on page by class
+/*
+    $(".square").click(function()
+    {
+        alert($(".square").css("width"));
+    });  
+*/
+
+//Return attribute of an element on page by type
+/*
+    $("div").click(function()
+    {
+        alert($(this).css("width"));
+    }); 
+*/
+
+//Change attribute of an element on page by type
+/*
+    $("div").click(function()
+    {
+        $(this).css("width", "400px");
+    }); 
+*/
+
+//Change attribute of an element on page by type
+/*
+    $("div").click(function()
+    {
+        $(this).css("display", "none");
+    });
+*/ 
+
+//Change attribute of an element on page by type
+/*
+    $("div").click(function()
+    {
+        $(this).hide();
+    });
+*/
+//Change attribute of an element on page by type
+/*
+    $("div").click(function()
+    {
+        $(this).fadeOut();
+    });
+*/
+//Change attribute of an element on page by type
+/*
+    $("#circle").click(function()
+    {
+        $(".square").fadeOut();
+    });
+*/
+    </script>
+    
+</body>
+</html>

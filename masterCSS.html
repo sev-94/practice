@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--CSS DECLARATION-->
+    <style type="text/css">
+
+/*-- BACKGROUND COLOUR --*/
+    body
+    {
+        background-color: grey;
+    }
+
+/*-- TEXT COLOUR & FONT - HEADER --*/
+    h1
+    {
+        color: lightsalmon;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+/*-- TEXT FONT & COLOUR & SIZE - PTAG --*/
+    p{
+        color: lime;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    
+/*-- CREATE DIV --*/
+    div
+    {
+        width:  100px;
+        height: 100px;
+        float:  left;
+        margin: 20px;
+    }
+        
+/*-- BORDERS --*/
+    .red
+    {
+        background-color: red;
+        border: 20px blue ridge;
+    }
+        
+    .green
+    {
+        background-color: green;
+        border: 20px black solid;
+    }
+        
+    .blue
+    {
+        background-color: blue;
+        border: 20px gold dotted;
+        border-radius: 20px;
+    }
+        
+/*-- FLOAT RIGHT AND LEFT --*/
+    .hi
+    {
+        background-color: greenyellow;
+        width: 50px;
+        height: 50px;
+    }
+
+    p
+    {
+        font-size: 200%;
+    }
+
+/*-- PARAGRAPH ID --*/
+    #once
+    {
+        font-size: 120%;
+        color: green;
+    }
+
+/*-- SET SPAN TEXT COLOUR & SIZE --*/
+    .para1
+    {
+        font-size: 200%;
+        color: blue;
+    }
+
+    .bluebox
+    {
+        background-color: blue;
+        width: 100px;
+        height: 200px;
+    }
+
+    .large
+    {
+        font-size: 120%;
+    }
+
+    .redbox
+    {
+        background-color: red;
+        width: 300px;
+        height: 300px;
+    }
+
+    #green
+    {
+        text-decoration: underline;
+    }
+
+    .bold
+    {
+        font-weight: bold;
+    }
+
+    .underline
+    {
+        text-decoration: underline;
+    }
+
+    .italic
+    {
+        font-size: italic;
+    }
+
+    .divSet
+    {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+        text-align: right;
+    }
+
+    .justifyText
+    {
+        text-align: justify;
+    }
+
+    #divx
+    {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        text-align: right;
+    }
+
+/*-- LINK CUSTOMIZATION --*/
+    a:visited
+    {
+        color:green;
+    }
+
+    a:hover
+    {
+        font-size: 50px;
+    }
+
+    .megaSize
+    {
+        font-size: 200%;
+    }
+
+/*-- MARGINS & PADDING --*/
+    .backgroundColor
+    {
+        background-color: darkgoldenrod;
+        width: 150px;
+        height: 150px;
+    }
+        
+    .setMarginAllAroundDiv
+    {
+        margin: 50px;
+    }
+
+    .setMarginMyOffsets
+    {
+        margin: 30px 100px 300px 100px;
+    }
+
+    .setMarginJustOneSide
+    {
+        margin-top: 100 px;
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-bottom: 100px;
+    }
+
+    .setPadding
+    {
+        padding: 50px;
+    }
+
+    p
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+/*-- DIFFERENT POSITIONING OPTIONS --*/
+    .purplebox
+    {
+        background-color: purple;
+        width: 100px;
+        height: 100px;  
+    }
+
+    .orangebox 
+    {
+        background-color: orange;
+        width: 100px;
+        position: relative;
+        left: 100px;
+    }
+
+    .greenbox
+    {
+        background-color: green;
+        position: fixed;
+    }
+
+    #blue 
+    {
+        color: blue;
+    }
+
+    #orange 
+    {
+        color: yellow;
+    }
+
+    #red
+    {
+        color:red;
+    }
+    
+    </style>
+
+</head>
+<body>
+
+<!-- TEXT COLOUR -->
+    <h1> Hi </h1>
+
+<!-- TEXT FONT & COLOUR -->
+    <p> Hello </p>
+
+<!-- RIDGE, SOLID & DOTTED BORDERS -->
+    <div class="red"></div>
+
+    <div class="green"></div>
+
+    <div class="blue"></div>
+
+<!-- NEW LINE -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+ 
+
+<!-- FLOAT LEFT DIV -->
+    <div class="hi floatLeft"></div>
+
+<!-- FLOAT RIGHT DIV -->
+    <div class="hi floatRight"></div>
+
+<!-- NEW LINE -->
+    <br/>  
+    <br/>  
+    <br/>  
+    <br/>  
+
+<!-- START OF NEW PARAGRAPH -->
+    <p id="once"> This paragraph is defined by ID not Class
+
+<!-- SPAN IS A BREAK IN A PARAGRAPH -->
+    <span class="para1"> This is a span with para1 class called </span>
+
+<!-- END OF SPAN -->
+    should only be used for one thing </p>
+
+<!-- END OF PARAGRAPH -->
+    <p> This paragraph tag will be larger than usual </p>
+  
+<!-- SET TEXT & DIV WITH CSS -->
+    <div class="bluebox">
+        <p class="large"> This is some text </p>
+    </div>
+
+    <div class="redbox">
+        <p id="green" class="large"> Hello my name is sevag </p>
+    </div>
+
+    <p> The third 
+    
+    <span class="underline large bold"> word </span>
+
+    in this paragraph is underlined & bolded </p>
+
+<!-- JUSTIFY-SPACING TEXT -->
+    <div class="bold divSet justifyText"> I AM TEXT JUSTIFY ALIGNED </div>
+
+<!-- RIGHT-ALIGNED TEXT -->
+    <div id="divx">
+        <p class="underline italic bold"> I AM TEXT ALIGNED RIGHT </p>
+    </div>
+
+<!-- LINK TEXT & FONT SIZE & COLOUR -->
+    <a href="http://www.google.ca" target="_blank"> Google </a>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+<!-- MARGINS & PADDING -->
+    <div class="font-size backgroundColor setMarginAllAroundDiv setPadding">
+
+        <p> HelloHelloHelHelloHe HelloHelloHelHelloHe HelloHelloHelHelloHe </p>
+
+    </div>    
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- DIFFERENT POSITIONING OPTIONS -->
+
+    <div class="purplebox positionFixed">
+        <p class="large">
+            This is some fixed text
+        </p>
+    </div>
+
+    <div class="orangebox moveRightSome">
+        <p id="green" class="large">
+            This is some more text
+        </p>    
+    </div> 
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div class="greenbox">
+        <p id="red" class="large"> 
+            This is some more text 
+        </p>
+    </div>
+
+    <div class="purplebox positionAbsolute">
+        <p id="blue" class="large">
+            This position is absolute
+        </p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="greenbox positionFixed">
+        <p id="yellow" class="large">
+            This position type fixed 
+        </p>
+    </div>
+
+</body>
+</html>

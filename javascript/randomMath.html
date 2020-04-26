@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p> How many fingers?</p>
+
+        <input id="answer"/>
+
+        <button id="myButton"> Submit </button>    
+
+    <script type="text/javascript">
+
+    document.getElementById("myButton").onclick=function()
+    {
+    var x = Math.random();
+    x = 6 * x;
+    x = Math.floor(x);
+
+    var y = document.getElementById("answer").value;
+
+    alert(y);
+    }  ;  
+
+
+</script>    
+</body>
+</html>

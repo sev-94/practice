@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+    
+    .redbox{
+        background-color: red;
+        width: 100px;
+        height: 50px;
+    }
+    
+    </style>
+
+</head>
+<body>
+
+    <div id = "click" class="redbox">
+        
+        <p>
+            Dont Press Me
+        </p>
+
+    </div>
+
+    <script type="text/javascript">
+
+        document.getElementById("click").onclick = 
+        function () {
+            while(1){
+                alert("How Dare You!");
+            }
+        };
+    </script>
+
+  
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+    
+        .redbox{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p id="para1">
+
+        Start
+
+    </p>
+
+    <button id = "button1" class="redbox"> </button>
+
+
+    <script type="text/javascript">
+    
+    var myArray = new Array();
+    var myArray2 = new Array();
+
+    myArray[0] = "Hello";
+    myArray[1] =  "Hi";
+
+    myArray2 = ["bye", "goodbye"];
+
+    myArray.splice(0, 1, "HELLOOO");
+
+    console.log(myArray2);
+
+    
+    document.getElementById("button1").onclick = function() {
+       document.getElementById("para1").innerHTML = myArray[0];
+    };
+    
+    </script>
+
+
+    
+</body>
+</html>

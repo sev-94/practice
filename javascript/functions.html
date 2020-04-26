@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="tester"> a+b+c=    </p>
+
+    <script type="text/javascript">
+    
+    function addingABC(a,b,c){
+        return(a+b+c);
+    }
+    var x = document.getElementById("tester").append(addingABC(1,2,3));
+    
+    console.log(x);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+
+    .purplebox{
+        background-color: purple;
+        width: 100px;
+        height: 100px;
+        
+    }
+
+    .orangebox {
+        background-color: orange;
+        width: 100px;
+        position: relative;
+        left: 100px;
+    }
+
+    .greenbox{
+        background-color: green;
+        position: fixed;
+
+    }
+
+    #green {
+        color: green;
+    }
+
+    #blue {
+        color: blue;
+    }
+
+    #orange {
+        color: yellow;
+    }
+
+    #red{
+        color:red;
+    }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="purplebox positionFixed">
+        <p class="large">
+            This is some fixed text
+        </p>
+    </div>
+
+    <div class="orangebox moveRightSome">
+        <p id="green" class="large">
+            This is some more text
+        </p>    
+    </div> 
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div class="greenbox">
+        <p id="red" class="large"> 
+            This is some more text 
+        </p>
+    </div>
+
+    <div class="purplebox positionAbsolute">
+        <p id="blue" class="large">
+            This position is absolute
+        </p>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="greenbox positionFixed">
+        <p id="yellow" class="large">
+            This position type fixed 
+        </p>
+    </div>
+</body>
+</html>

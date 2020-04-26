@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- jQuery reference file -->
+    <script type="text/javascript" src="jquery1.min.js"></script>
+
+    <style>
+
+        #circle {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border-radius: 100px;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="circle"></div>
+
+    <p> This is some text </p>
+
+    <iframe src="https://www.bing.com"></iframe>
+
+
+    <script>
+    /*
+//Change content of an element
+$("#circle").click(function()
+        {
+            $("p").html("The text has been changed!");
+        });
+
+//OR-------------
+
+        $("#circle").click(function()
+        {
+            alert($("p").html());
+        });
+
+//Hover Function
+        $("#circle").hover(function()
+        {
+            alert($("p").html("Changed!"));
+        });
+*/
+//Return an attribute of an element
+        $("#circle").hover(function()
+        {
+            alert($("iframe").attr("src"));
+        });
+
+//Set an attribute of an element
+        $("#circle").hover(function()
+        {
+            alert($("iframe").attr("src", "http://www.hotmail.com"));
+        });
+        
+    </script>
+    
+</body>
+</html>
