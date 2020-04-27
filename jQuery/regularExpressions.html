@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
-
-<!-- jQuery reference file -->
+    <!-- jQuery reference file -->
     <script type="text/javascript" src="jquery1.min.js"></script>
 
     <style>
@@ -26,25 +24,31 @@
             margin-top: 10px;
         }
 
+
     </style>
 
 </head>
 <body>
 
-    <p id="p1">This is some text</p>
-
-    <button id="fader">Fade Out</button>
 
     <script>
 
-//Change attribute of an element on page by type
-        function fadeIn() { 
-            $("#p1").fadeIn(2000);
-        }
-    $("#fader").click(function()
-    {
-        $("#p1").fadeOut(2000, fadeIn);
-    });
+//ONLY SENDS ALERT FOR THE LAST STATEMENT IN THE ORDER
+
+//Finds one instance of variable (Case Sensitive)
+        var regex=/e/;
+
+//Finds one instance of variable (Case Insensitive)
+        var regex=/great/i;
+
+//Finds all instances of variable
+        var regex=/e/g;
+
+        var string="Regex is great!";
+
+        var result = string.match(regex);
+
+        alert(result);
 
     </script>
     

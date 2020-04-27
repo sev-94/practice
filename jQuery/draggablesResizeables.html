@@ -5,46 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
-
-<!-- jQuery reference file -->
     <script type="text/javascript" src="jquery1.min.js"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
     <style>
 
-        #circle {
+        #draggable {
             width: 200px;
             height: 200px;
             background-color: green;
-            border-radius: 100px;
         }
 
-        .square {
+        #resizable {
             width: 200px;
             height: 200px;
             background-color: red;
-            margin-top: 10px;
         }
 
     </style>
-
 </head>
 <body>
 
-    <p id="p1">This is some text</p>
+    <div id="draggable">Drag Me Around!</div>
 
-    <button id="fader">Fade Out</button>
+    <div id="resizable">Resize Me!</div>
 
     <script>
 
-//Change attribute of an element on page by type
-        function fadeIn() { 
-            $("#p1").fadeIn(2000);
-        }
-    $("#fader").click(function()
-    {
-        $("#p1").fadeOut(2000, fadeIn);
-    });
+        $("#draggable").draggable();
+
+        $("#resizable").resizable();
 
     </script>
     
